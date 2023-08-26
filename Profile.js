@@ -11,5 +11,5 @@ logoutButton.addEventListener("click",()=>{
     localStorage.setItem('fullName',null);
     localStorage.setItem('email',null);
     localStorage.setItem('password',null);
-    window.location.href="SignUp.html"
+    window.location.href="index.html"
 })
