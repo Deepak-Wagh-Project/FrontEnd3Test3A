@@ -1,4 +1,4 @@
-if(localStorage.getItem('token')==='null'){
+if(localStorage.getItem('token')===`null`||localStorage.getItem('token')===null){
      window.location.href="index.html";
 }
 const fullName=document.getElementById("full-name-content");
