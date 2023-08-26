@@ -1,29 +1,51 @@
 :root{
     background-color: #000;
 }
-
 .main-container{
+    display: flex;
+flex-flow: column;
+}
+
+.main-container p{
     color: #FFF;
 font-family: Inter;
 font-size: 64px;
 font-style: normal;
 font-weight: 400;
-line-height: normal;
+padding: 2px;
 }
 .details{
     display: flex;
-    flex-direction: row;
+    flex-flow: row;
+    width: 100%;
 }
+
 button{
     width: 226px;
     height: 58px;
     flex-shrink: 0;
+    display: flex;
+    justify-content: center;
 }
-button p{
+#logout p{
     color: #000;
 font-family: Inter;
 font-size: 24px;
 font-style: normal;
 font-weight: 300;
 line-height: normal;
+
+align-self: center;
+}
+@media screen and (min-width:320px) and (max-width:480px) {
+    .main-container p{
+        font-size: 30px;
+        height: 35px;
+    }
+    .details{
+        display: flex;
+        flex-flow: column; 
+        
+    }
+    
 }
