@@ -1,0 +1,29 @@
+:root{
+    background-color: #000;
+}
+
+.main-container{
+    color: #FFF;
+font-family: Inter;
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+}
+button{
+    width: 226px;
+    height: 58px;
+    flex-shrink: 0;
+}
+button p{
+    color: #000;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
