@@ -29,11 +29,10 @@ if(password!==confirmPassword){
     mainContainer.insertBefore(error,signUpButton);
     return;
 }
-// const obj={
-//     fullName:fullName,
-//     email:email,
-//     password:password
-// }
+const randomBuffer = new Uint8Array(16);
+window.crypto.getRandomValues(randomBuffer);
+const token = Array.from(randomBuffer).map(byte => byte.toString(16).padStart(2, '0')).join('');
+localStorage.setItem('token',token);
 localStorage.setItem('fullName',fullName);
 localStorage.setItem('email',email);
 localStorage.setItem('password',password);
