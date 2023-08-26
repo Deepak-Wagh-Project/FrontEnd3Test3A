@@ -7,8 +7,7 @@ const confirmPasswordBox=document.getElementById("confirm-password-input")
 const error= document.createElement("div");
 error.id="error";
 error.innerHTML=`Error : All the fields are mandatory`;
-if(localStorage.getItem("fullName")!=='null'&&localStorage.getItem("fullName")!=='null'&&
-localStorage.getItem("fullName")!=='null'){
+if(localStorage.getItem('token')!=='null'){
   window.location.href="Profile.html"
   
 }
