@@ -9,15 +9,17 @@ flex-flow: column;
 .main-container p{
     color: #FFF;
 font-family: Inter;
-font-size: 64px;
+font-size: 45px;
 font-style: normal;
 font-weight: 400;
 padding: 2px;
+margin: 0px;
 }
 .details{
     display: flex;
     flex-flow: row;
     width: 100%;
+    margin: 20px;
 }
 
 button{
