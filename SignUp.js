@@ -1,3 +1,12 @@
+if(localStorage.getItem('token')===null||localStorage.getItem('token')===`null`){
+  
+  
+}
+else if(localStorage.getItem('token').length>4){
+   window.location.href="Profile.html"
+}
+
+
 const signUpButton= document.getElementById("sign-up-button-container");
 const mainContainer=document.getElementById("main-container")
 const fullNameTextBox=document.getElementById("name-input")
@@ -7,13 +16,6 @@ const confirmPasswordBox=document.getElementById("confirm-password-input")
 const error= document.createElement("div");
 error.id="error";
 error.innerHTML=`Error : All the fields are mandatory`;
-if(localStorage.getItem('token')===null||localStorage.getItem('token')===`null`){
-  
-  
-}
-else if(localStorage.getItem('token').length>4){
-   window.location.href="Profile.html"
-}
 
 signUpButton.addEventListener("click",()=>{
 const fullName=fullNameTextBox.value.trim();
