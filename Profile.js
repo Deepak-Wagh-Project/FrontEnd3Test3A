@@ -1,3 +1,6 @@
+if(localStorage.getItem('fullName')==='null'){
+     window.location.href="index.html";
+}
 const fullName=document.getElementById("full-name-content");
 const eMail=document.getElementById("email-content");
 const password=document.getElementById("password-content");
