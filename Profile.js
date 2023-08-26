@@ -1,4 +1,4 @@
-if(localStorage.getItem('fullName')==='null'){
+if(localStorage.getItem('token')==='null'){
      window.location.href="index.html";
 }
 const fullName=document.getElementById("full-name-content");
@@ -14,5 +14,6 @@ logoutButton.addEventListener("click",()=>{
     localStorage.setItem('fullName',null);
     localStorage.setItem('email',null);
     localStorage.setItem('password',null);
+    localStorage.setItem('token',null);
     window.location.href="index.html"
 })
